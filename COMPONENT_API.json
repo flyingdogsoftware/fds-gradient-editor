@@ -1,0 +1,46 @@
+{
+  "total": 1,
+  "components": [
+    {
+      "moduleName": "default",
+      "filePath": "src/App.svelte",
+      "props": [
+        {
+          "name": "icon",
+          "kind": "let",
+          "description": "example parameter",
+          "type": "string",
+          "value": "\"\"",
+          "isFunction": false,
+          "isFunctionDeclaration": false,
+          "constant": false,
+          "reactive": false
+        },
+        {
+          "name": "getInfo",
+          "kind": "function",
+          "description": "Get information about component",
+          "type": "() => any",
+          "value": "() => {         if (type===\"version\"){             return new Promise(resolve => {                 resolve(componentversion);             });         }         let res = await fdsHelper.getInfo(type,name);         return res;         }",
+          "isFunction": true,
+          "isFunctionDeclaration": true,
+          "constant": false,
+          "reactive": false
+        },
+        {
+          "name": "version",
+          "kind": "const",
+          "description": "version of component",
+          "type": "string",
+          "isFunction": false,
+          "isFunctionDeclaration": false,
+          "constant": true,
+          "reactive": false
+        }
+      ],
+      "slots": [],
+      "events": [],
+      "typedefs": []
+    }
+  ]
+}
