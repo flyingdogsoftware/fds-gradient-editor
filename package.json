@@ -1,6 +1,6 @@
 {
   "name": "@fds-components/fds-gradient-editor",
-  "version": "1.0.6",
+  "version": "1.0.7",
   
   "scripts": {
     "build": "npm run build:prepare && rollup -c",
