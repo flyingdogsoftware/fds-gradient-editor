@@ -1,7 +1,9 @@
 {
   "name": "@fds-components/fds-gradient-editor",
   "version": "1.0.7",
-  
+  "repository": {
+    "url": "https://github.com/flyingdogsoftware/fds-gradient-editor.git"
+  },
   "scripts": {
     "build": "npm run build:prepare && rollup -c",
     "devdoc": "npm run build:prepare && export SKIP_HTTPSERVER=true && export MAKE_DOC=true && rollup -c -w",
