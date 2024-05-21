@@ -18,7 +18,7 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: '@organizationName'
       - name: Install dependencies
-        run: yarn
+        run: npm
       - name: Publish package
         run: yarn publish --access restricted
         env:
