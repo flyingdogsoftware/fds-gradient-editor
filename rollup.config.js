@@ -5,7 +5,6 @@ import livereload from 'rollup-plugin-livereload';
 import {terser} from 'rollup-plugin-terser';
 import copy from 'rollup-plugin-copy';
 import css from 'rollup-plugin-css-only';
-import mdDoc from  '@fds-components/fds-md-documenter';
 import json from '@rollup/plugin-json';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -80,7 +79,6 @@ export default {
             browser: true,
             dedupe: ['svelte']
         }),
-        ...mdDoc(),
         commonjs(),
 
         {
