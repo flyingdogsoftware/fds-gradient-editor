@@ -10,7 +10,7 @@
     "doc": "npm run build:prepare && export SKIP_HTTPSERVER=true && export MAKE_DOC=true && rollup -c && npm run copy:json_doc",
     "dev": "npm run build:prepare && rollup -c -w",
     "build:prepare": "rm -rf dist && mkdir -p dist/node_modules && npm run copy:json_doc && npm run copy:node_modules",
-    "copy:node_modules": "cp -rp node_modules/@fds-components dist/node_modules/@fds-components",
+    "copy:node_modules": "",
     "copy:pages": "cp -rp dist public",
     "copy:json_doc": "find . -maxdepth 1 -name \"*.json\" ! -name 'package*' ! -name 'COMPONENT_API.json' -type f  -exec cp -- {} dist \\;",
     "cc": "node ./helper/cc.js",
