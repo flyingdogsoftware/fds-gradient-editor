@@ -1,5 +1,5 @@
 {
-  "name": "@fds-components/fds-gradient-editor",
+  "name": "@fds-components-public/fds-gradient-editor",
   "version": "1.0.9",
   "repository": {
     "url": "https://github.com/flyingdogsoftware/fds-gradient-editor.git"
@@ -40,5 +40,11 @@
     "svelte": "3.*",
     "svelte-dnd-action": "^0.9.11"
   },
-  "svelte": "./src/main.js"
+  "svelte": "./src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flyingdogsoftware/fds-gradient-editor"
+  },
+  "author": "Nicolay Mausz",
+  "license": "MIT"
 }
