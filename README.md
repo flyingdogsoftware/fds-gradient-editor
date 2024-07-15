@@ -1,13 +1,13 @@
 # fds-gradient-editor
 
-Simple gradient editor made with Svelte as web component so it can be used in Gyre form editor as an element for the Gyre user interface.
+Simple gradient editor made with Svelte as Web Component so it can be used in Gyre form editor as an element for the Gyre user interface.
 
 ## Installation
-npm i @fds-components/fds-gradient-editor
+npm i @fds-components-public/fds-gradient-editor
 
 ## Usage 
 ``` html
-<script src="fds-gradient-editor.js"></script>
+<script src="<Path>/fds-gradient-editor.js"></script>
 
 <fds-gradient-editor value="gradient definitions"></fds-gradient-editor>
 
