@@ -9,9 +9,9 @@
 
   export let value = "";
 
-  onMount(() => {
-    if (value) {
-      const stops = value.split("\n").map((line) => {
+
+  function refresh() {
+    const stops = value.split("\n").map((line) => {
         const [position, rgb] = line.split(":");
         const [r, g, b] = rgb.split(",").map(Number);
         const hexColor = `#${((1 << 24) + (r << 16) + (g << 8) + b)
@@ -20,9 +20,9 @@
         return { position: parseFloat(position), color: hexColor };
       });
       gradient.set(stops);
-    }
-  });
+  }
 
+ $: if (value) { refresh()  }
   function updateGradient() {
     gradient.update((stops) => {
       const updatedValue = stops
